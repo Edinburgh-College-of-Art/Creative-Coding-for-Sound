@@ -2,6 +2,14 @@
 
 This document will cover how to install the necessary software and libraries to getting started with your Arduino kit.
 
+## Tutorial Videos
+
+The following tutorial videos cover the setup material in the rest of this document. Follow along if you are having any difficulty setting up.
+
+1. [Installing Arduino](https://media.ed.ac.uk/media/1+Installing+Arduino/1_3ccyec92)
+2. [Configuring Arduino IDE](https://media.ed.ac.uk/media/2+Configuring+Arduino+IDE/1_2xnvhgkj)
+3. [Nano 33 IoT](https://media.ed.ac.uk/media/3+Nano+33+IoT/1_p7ufan0z)
+4. [Sketches and debug](https://media.ed.ac.uk/media/4+Sketches+and+debug/1_uwmvsir1)
 
 ## Setup
 
