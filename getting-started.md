@@ -39,8 +39,8 @@ You should now have a blinking LED on your Arduino.
 
 ### Troubleshooting
 
-If you have any problem with the above, it can help sometimes to restart your computer
-
+- If you have any problem with the above, it can help sometimes to restart your computer
+<!--
 ### Basic Examples
 
 
@@ -52,12 +52,12 @@ Arduino & LED on breadboard (resistors?)
 
 Add potentiometer to breadboard (input data, make decision, make LED blink) – Fade
 
-#### SerialRead
+#### SerialRead -->
 
 
-### Arduino Libraries
+<!-- ### Arduino Libraries
 
-Libraries required to run the examples.
+Libraries required to run the examples. -->
 
 ### WiFi Firmware Updates
 
