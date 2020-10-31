@@ -2,6 +2,15 @@
 outlets = 6
 var imuData = []
 //------------------------------------------------------------------------------
+
+setinletassist(0, "24 byte list (list)")
+setoutletassist(0, "Acc x (float)")
+setoutletassist(1, "Acc y (float)")
+setoutletassist(2, "Acc z (float)")
+setoutletassist(3, "Gyro x (float)")
+setoutletassist(4, "Gyro y (float)")
+setoutletassist(5, "Gyro z (float)")
+//------------------------------------------------------------------------------
 function floatToIeee32(value)
 {
   var bytes = 0;
