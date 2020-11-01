@@ -1,8 +1,9 @@
 //------------------------------------------------------------------------------
 outlets = 6
+inlets = 2
 var imuData = []
+var littleEndian = false;
 //------------------------------------------------------------------------------
-
 setinletassist(0, "24 byte list (list)")
 setoutletassist(0, "Acc x (float)")
 setoutletassist(1, "Acc y (float)")
@@ -125,8 +126,15 @@ function bytes2Array(bytes)
 //------------------------------------------------------------------------------
 function arrayToIeee(bytes)
 {
-  return (bytes[0] | (bytes[1] << 8) | (bytes[2] << 16) | (bytes[3] << 24))
-  //return (bytes[3] | (bytes[2] << 8) | (bytes[1] << 16) | (bytes[0] << 24))
+  if (littleEndian)
+  {
+    return (bytes[3] | (bytes[2] << 8) | (bytes[1] << 16) | (bytes[0] << 24))
+  }
+  else
+  {
+    return (bytes[0] | (bytes[1] << 8) | (bytes[2] << 16) | (bytes[3] << 24))
+  }
+
 }
 //------------------------------------------------------------------------------
 function list(a)
@@ -148,6 +156,17 @@ function list(a)
   outlet(5, ieee32ToFloat(imuData[5]))
 }
 //------------------------------------------------------------------------------
+function msg_int(a)
+{
+  switch (inlet)
+  {
+    case 1:
+      littleEndian = Boolean(a)
+      break;
+    default:
+  }
+}
+
 function bang()
 {
 
