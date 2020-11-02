@@ -1,8 +1,12 @@
 //------------------------------------------------------------------------------
-outlets = 6
+outlets = 8
 inlets = 2
 var imuData = []
 var littleEndian = false;
+var dt = 0.1; // time delta seconds
+var gyroRoll = 0.0;
+var gyroPitch = 0.0;
+var sensorAlphaBlend = 1.0
 //------------------------------------------------------------------------------
 setinletassist(0, "24 byte list (list)")
 setoutletassist(0, "Acc x (float)")
@@ -148,12 +152,30 @@ function list(a)
       arguments[i + 3]
     ])
   }
-  outlet(0, ieee32ToFloat(imuData[0]))
-  outlet(1, ieee32ToFloat(imuData[1]))
-  outlet(2, ieee32ToFloat(imuData[2]))
-  outlet(3, ieee32ToFloat(imuData[3]))
-  outlet(4, ieee32ToFloat(imuData[4]))
-  outlet(5, ieee32ToFloat(imuData[5]))
+  var ax = ieee32ToFloat(imuData[0])
+  var ay = ieee32ToFloat(imuData[1])
+  var az = ieee32ToFloat(imuData[2])
+  var gx = ieee32ToFloat(imuData[3])
+  var gy = ieee32ToFloat(imuData[4])
+  var gz = ieee32ToFloat(imuData[5])
+
+  var pitch = Math.asin(ax);
+  pitch = Math.atan2(-ax, (Math.sqrt((ay * ay) + (az * az))))
+  var roll = (pitch == 0.00) ? 0.00 : Math.asin(ay / Math.cos(pitch))
+  roll = Math.atan2(ay, az);
+  gyroRoll += gy * dt;
+  gyroPitch += gx * dt;
+  roll = (gyroRoll * (1.0 - sensorAlphaBlend)) + (roll * sensorAlphaBlend)
+  pitch = (gyroPitch * (1.0 - sensorAlphaBlend)) + (pitch * sensorAlphaBlend)
+
+  outlet(0, ax)
+  outlet(1, ay)
+  outlet(2, az)
+  outlet(3, gx)
+  outlet(4, gy)
+  outlet(5, gz)
+  outlet(6, pitch)
+  outlet(7, roll)
 }
 //------------------------------------------------------------------------------
 function msg_int(a)
