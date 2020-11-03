@@ -16,6 +16,20 @@ setoutletassist(3, "Gyro x (float)")
 setoutletassist(4, "Gyro y (float)")
 setoutletassist(5, "Gyro z (float)")
 //------------------------------------------------------------------------------
+function getPitchAndRoll(ax, ay, az)
+{
+  var pitch, roll
+  roll = Math.atan2(ay, az);
+
+  if (ay * Math.sin(roll) + az * Math.cos(roll) == 0)
+    var pitch = (ax > 0) ? (Math.PI / 2) : (-Math.PI / 2);
+  else
+    var pitch = Math.atan(-ax / (ay * Math.sin(roll) + (az * Math.cos(roll))));
+
+  return [pitch, roll]
+}
+
+//------------------------------------------------------------------------------
 function floatToIeee32(value)
 {
   var bytes = 0;
@@ -159,14 +173,17 @@ function list(a)
   var gy = ieee32ToFloat(imuData[4])
   var gz = ieee32ToFloat(imuData[5])
 
-  var pitch = Math.asin(ax);
-  pitch = Math.atan2(-ax, (Math.sqrt((ay * ay) + (az * az))))
-  var roll = (pitch == 0.00) ? 0.00 : Math.asin(ay / Math.cos(pitch))
-  roll = Math.atan2(ay, az);
-  gyroRoll += gy * dt;
-  gyroPitch += gx * dt;
-  roll = (gyroRoll * (1.0 - sensorAlphaBlend)) + (roll * sensorAlphaBlend)
-  pitch = (gyroPitch * (1.0 - sensorAlphaBlend)) + (pitch * sensorAlphaBlend)
+  // var pitch = Math.asin(ax);
+  // pitch = Math.atan2(-ax, (Math.sqrt((ay * ay) + (az * az))))
+  // var roll = (pitch == 0.00) ? 0.00 : Math.asin(ay / Math.cos(pitch))
+  // roll = Math.atan2(ay, az);
+  // gyroRoll += gy * dt;
+  // gyroPitch += gx * dt;
+  // roll = (gyroRoll * (1.0 - sensorAlphaBlend)) + (roll * sensorAlphaBlend)
+  // pitch = (gyroPitch * (1.0 - sensorAlphaBlend)) + (pitch * sensorAlphaBlend)
+
+  var pitch, roll
+  [pitch, roll] = getPitchAndRoll(ax, ay, az)
 
   outlet(0, ax)
   outlet(1, ay)
