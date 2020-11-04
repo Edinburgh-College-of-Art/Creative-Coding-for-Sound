@@ -59,7 +59,11 @@ Add potentiometer to breadboard (input data, make decision, make LED blink) – 
 
 Libraries required to run the examples. -->
 
-### WiFi Firmware Updates
+### WifiNINA
+
+The Nano 33 IoT uses the WifiNINA library for wifi. Download this via the Arduino Library Manager.
+
+#### WiFi Firmware Updates
 
 Make sure your wifi module is the latest firmware. If you've downloaded Arduino IDE before, check your WifiNINA library and make sure it is at version `1.6.0`.
 

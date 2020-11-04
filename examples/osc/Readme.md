@@ -1,6 +1,26 @@
 # Arduino to Max via OSC
 
-For the most part these examples will use the [OSC library by Adrian Freed and Yotam Mann](https://github.com/CNMAT/OSC)
+## Introduction
+
+Open Sound Control (OSC), like MIDI, is standard for interpreting data sent over a network for control over audio devices and software.
+
+## Setup
+
+If you have not tried the [Serial example first](/examples/imu/imu_serial), please do. Using OSC adds in the extra level of complexity of a network. A device will send a message to a destination IP address, on a specific port. In these examples, a broadcast address has been used. This means that all devices on a network can pick up the data. In this case it is
+
+
+```py
+192.168.1.255
+```
+
+
+Most home networks will be on a very similar IP range of, you may just want to double check your network to make sure.
+
+### Arduino
+
+For the most part these examples will use the [OSC library by Adrian Freed and Yotam Mann](https://github.com/CNMAT/OSC). Download via the Arduino library manger.
+
+Make sure that you also have the WifiNINA Library installed to make use of the Nano's wifi capabilities. See the [Getting Started guide](/getting-started.md#wifinina) fore more info.
 
 ## Parsing OSC Messages
 
