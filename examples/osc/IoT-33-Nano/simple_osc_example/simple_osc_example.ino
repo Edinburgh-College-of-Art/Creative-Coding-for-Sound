@@ -1,9 +1,9 @@
 //------------------------------------------------------------
-#include <WiFiNINA.h>   // For IoT Nano 33
+#include <WiFiNINA.h>   // For Nano 33 IoT
 #include <WiFiUDP.h>
 #include <OSCMessage.h> // OSC library by Adrian Freed, Yotam Mann
 //------------------------------------------------------------
-IPAddress outIp(192, 168, 1 , 64);
+IPAddress outIp(192, 168, 1 , 255); // x.x.x.255 is typical broadcast address for network.
 const unsigned int outPort = 12000;
 WiFiUDP Udp;
 //------------------------------------------------------------
