@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Open Sound Control (OSC), like MIDI, is standard for interpreting data sent over a network for control over audio devices and software.
+[Open Sound Control (OSC)](http://opensoundcontrol.org/introduction-osc), like MIDI, is standard for interpreting data sent over a network for control over audio devices and software.
 
 ## Setup
 
@@ -13,16 +13,33 @@ If you have not tried the [Serial example first](/examples/imu/imu_serial), plea
 192.168.1.255
 ```
 
-
 Most home networks will be on a very similar IP range of, you may just want to double check your network to make sure.
 
 ### Arduino
 
 For the most part these examples will use the [OSC library by Adrian Freed and Yotam Mann](https://github.com/CNMAT/OSC). Download via the Arduino library manger.
 
-Make sure that you also have the WifiNINA Library installed to make use of the Nano's wifi capabilities. See the [Getting Started guide](/getting-started.md#wifinina) fore more info.
+Make sure that you also have the WifiNINA Library installed to make use of the Nano's wifi capabilities. See the [Getting Started guide](/getting-started.md#wifinina) for more info.
 
-## Parsing OSC Messages
+In Arduino each sketch there are some details you will need to fill in.
+
+**Your WiFi network details**
+
+```cpp
+// replace these with the name and password for your local wi-fi network
+const char* ssid = "YOUR SSID";
+const char* password = "YOUR WIFI PASSWORD";
+```
+
+An possibly the ip address
+
+```cpp
+// x.x.x.255 is typical broadcast address for network.
+IPAddress outIp(192, 168, 1, 255);
+```
+
+
+### MAx
 
 To parse OSC messages you can use the OSC Route also provided by CNMAT. This can be installed either through [Max's package manager](https://docs.cycling74.com/max8/vignettes/package_manager?q=package) or you can [download a release directly from the repository](https://github.com/CNMAT/CNMAT-odot/releases).
 
@@ -70,3 +87,17 @@ di1Cat1Jjxx0TopN9.rL8XeTHsCm3ACYb2PnSFVRWyZrG9xKLQZ5vpMsWqjt
 VXaRiwNWEKnRdEC7tusfXRIz+11tSUV+48Pa99uz+OvmbMfP
 -----------end_max5_patcher-----------
 ```
+
+## Troubleshooting
+
+### No Data in Max
+
+There are a few reasons for no data arriving, check through the following
+
+- Is the IP address correct?
+    - Try setting the ip in the Arduino Sketch to your machines IP rather than broadcasting
+- is the Arduino Connected to WiFi?
+    - Check the Serial Monitor in the Arduino IDE
+- Is the port correct?
+
+    So long as no details have been changed this shouldn't be a problem
