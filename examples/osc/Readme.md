@@ -39,7 +39,7 @@ IPAddress outIp(192, 168, 1, 255);
 ```
 
 
-### MAx
+### Max
 
 To parse OSC messages you can use the OSC Route also provided by CNMAT. This can be installed either through [Max's package manager](https://docs.cycling74.com/max8/vignettes/package_manager?q=package) or you can [download a release directly from the repository](https://github.com/CNMAT/CNMAT-odot/releases).
 
