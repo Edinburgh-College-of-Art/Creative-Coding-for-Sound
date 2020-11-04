@@ -15,6 +15,8 @@ setoutletassist(2, "Acc z (float)")
 setoutletassist(3, "Gyro x (float)")
 setoutletassist(4, "Gyro y (float)")
 setoutletassist(5, "Gyro z (float)")
+setoutletassist(6, "Pitch (float)")
+setoutletassist(7, "Roll (float)")
 //------------------------------------------------------------------------------
 function getPitchAndRoll(ax, ay, az)
 {
@@ -157,7 +159,6 @@ function arrayToIeee(bytes)
 //------------------------------------------------------------------------------
 function list(a)
 {
-
   for (var i = 0; i < arguments.length; i += 4)
   {
     imuData[i / 4] = arrayToIeee([arguments[i],
