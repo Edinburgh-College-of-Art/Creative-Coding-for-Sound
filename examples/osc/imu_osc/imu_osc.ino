@@ -9,8 +9,8 @@ const unsigned int outPort = 12000;
 WiFiUDP Udp;
 //------------------------------------------------------------
 byte mac[6];
-const char* ssid = "Major Crimes"; // replace these with the name and password for your local wi-fi network
-const char* password = "The Bunk";
+const char* ssid = "YOUR SSID";          // replace these with the name and password for your local wi-fi network
+const char* password = "YOUR WIFI PASSWORD";
 //------------------------------------------------------------
 float ax = 0, ay = 0, az = 0, gx = 0, gy = 0, gz = 0;
 //------------------------------------------------------------
@@ -18,9 +18,9 @@ void setup()
 {
   Serial.begin(9600);
   pinMode(LED_BUILTIN, OUTPUT);
-  while (!Serial) {}
+  // while (!Serial) {}
   if (!IMU.begin())
-  { 
+  {
     Serial.println("Failed to initialize IMU!");
     while (1);
   }
@@ -29,7 +29,7 @@ void setup()
 }
 //------------------------------------------------------------
 void loop ()
-{  
+{
   if (IMU.accelerationAvailable())
   {
     IMU.readAcceleration(ax, ay, az);
