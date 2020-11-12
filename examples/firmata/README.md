@@ -34,6 +34,4 @@ There is a [reference page](https://docs.cycling74.com/max8/vignettes/docrefpage
 
 ### Arduino
 
-[The standard firmata for Arduino](https://www.arduino.cc/en/Reference/Firmata) should be available without any extra download. Open Arduino IDE, and navigate to
-
-`File` > `Examples` > `Firmata` > `StandardFirmata`
+Open the `StandardFirmata` and upload to your Nano.
