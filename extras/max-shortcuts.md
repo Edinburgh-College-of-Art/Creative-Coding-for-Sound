@@ -9,6 +9,7 @@
 | --------------------------------- | ---------------------------------------------------------------- | ------- |
 | key command menu                  | `x`                                                              | `x`     |
 | Auto Adjust Object Width          | <kbd>⌘</kbd> <kbd>J</kbd>                                        |         |
+| Organise Patch cable              | <kbd>⌘</kbd> <kbd>Y</kbd>
 | Select All / Organise Patch Cords | <kbd>⌘</kbd> <kbd>A</kbd> / <kbd>⇧</kbd><kbd>⌘</kbd><kbd>Y</kbd> |         |
 | Toggle Lock                       | <kbd>⌘</kbd> <kbd>E</kbd>                                        |         |
 | Toggle Presentation               | <kbd>⌥</kbd><kbd>⌘</kbd> <kbd>E</kbd>                            |         |
