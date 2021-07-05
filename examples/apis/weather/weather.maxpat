@@ -225,7 +225,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 240.5, 100.0, 659.0, 22.0 ],
-									"text" : "sprintf http://api.openweathermap.org/data/2.5/weather?q=%s&units=metric&APPID=ad9b91df7dd6cfb856fd14d9eb7eebff"
+									"text" : "sprintf http://api.openweathermap.org/data/2.5/weather?q=%s&units=metric&APPID=YOUR_API_TOKEN_HERE"
 								}
 
 							}
