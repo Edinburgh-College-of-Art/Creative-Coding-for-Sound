@@ -123,7 +123,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 225.333331999999984, 253.5, 293.0, 24.0 ],
-					"presentation_linecount" : 2,
 					"text" : "Smooth the transition in data over the sample time"
 				}
 
@@ -211,8 +210,8 @@
 					"numinlets" : 3,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
-					"patching_rect" : [ 210.0, 292.0, 41.0, 22.0 ],
-					"text" : "line 0."
+					"patching_rect" : [ 210.0, 292.0, 47.0, 22.0 ],
+					"text" : "line 9.4"
 				}
 
 			}
@@ -223,8 +222,8 @@
 					"numinlets" : 3,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
-					"patching_rect" : [ 114.0, 292.0, 41.0, 22.0 ],
-					"text" : "line 0."
+					"patching_rect" : [ 114.0, 292.0, 54.0, 22.0 ],
+					"text" : "line 0.35"
 				}
 
 			}
@@ -249,8 +248,8 @@
 					"numinlets" : 3,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
-					"patching_rect" : [ 8.0, 292.0, 41.0, 22.0 ],
-					"text" : "line 0."
+					"patching_rect" : [ 8.0, 292.0, 51.0, 22.0 ],
+					"text" : "line -0.1"
 				}
 
 			}
@@ -262,7 +261,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 179.0, 161.0, 282.0, 24.0 ],
-					"presentation_linecount" : 2,
 					"text" : "3 separate XMLHttpRequests get the latest data"
 				}
 
