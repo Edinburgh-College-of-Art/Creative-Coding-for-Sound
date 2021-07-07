@@ -39,14 +39,25 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
-					"fontname" : "Arial",
-					"fontsize" : 13.0,
-					"id" : "obj-4",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 141.000000000000028, 225.0, 71.0, 23.0 ],
-					"text" : "print ASCII"
+					"id" : "obj-8",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 31.133362000000002, 224.0, 50.0, 22.0 ],
+					"text" : "201"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-6",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 154.000000000000028, 224.0, 50.0, 22.0 ],
+					"text" : "É"
 				}
 
 			}
@@ -57,8 +68,8 @@
 					"numinlets" : 3,
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
-					"patching_rect" : [ 141.000000000000028, 190.0, 40.0, 22.0 ],
-					"text" : "itoa"
+					"patching_rect" : [ 164.0, 189.0, 63.0, 22.0 ],
+					"text" : "itoa @utf8"
 				}
 
 			}
@@ -146,7 +157,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "int", "" ],
 					"patching_rect" : [ 31.133362000000002, 158.200287000000003, 60.0, 19.0 ],
-					"text" : "serial c 9600"
+					"text" : "serial d 9600"
 				}
 
 			}
@@ -190,19 +201,6 @@
 			}
 , 			{
 				"box" : 				{
-					"fontname" : "Arial",
-					"fontsize" : 13.0,
-					"id" : "obj-104",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 31.133362000000002, 190.0, 99.0, 23.0 ],
-					"text" : "print RawSerial"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"angle" : 270.0,
 					"bgcolor" : [ 0.52549, 0.062745, 0.003922, 0.25 ],
 					"id" : "obj-64",
@@ -221,7 +219,7 @@
  ],
 		"lines" : [ 			{
 				"patchline" : 				{
-					"destination" : [ "obj-4", 0 ],
+					"destination" : [ "obj-6", 1 ],
 					"source" : [ "obj-1", 0 ]
 				}
 
@@ -252,8 +250,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-104", 0 ],
-					"midpoints" : [ 40.633362000000005, 180.0, 40.633362000000005, 180.0 ],
+					"destination" : [ "obj-8", 1 ],
 					"order" : 1,
 					"source" : [ "obj-3", 0 ]
 				}

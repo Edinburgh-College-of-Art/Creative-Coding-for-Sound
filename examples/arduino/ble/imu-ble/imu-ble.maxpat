@@ -107,7 +107,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 2.0, 50.0, 303.0, 20.0 ],
-					"presentation_linecount" : 3,
 					"text" : "Get Accelerometer data over bluetoooth low energy"
 				}
 
@@ -120,8 +119,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 2.0, 1.0, 387.0, 47.0 ],
-					"presentation_linecount" : 4,
-					"text" : "Arduinon IMU over BLE"
+					"text" : "Arduino IMU over BLE"
 				}
 
 			}

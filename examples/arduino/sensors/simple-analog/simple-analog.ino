@@ -1,23 +1,23 @@
 /*
- Simple Analog Sensor Reading
-
- Connect a potentiometer to GND, A0, VCC
-  
+  Simple Analog Sensor Reading
 */
 
 int sensorPin = A0;    // select the input pin for the potentiometer
 uint16_t sensorValue = 0;
+uint16_t previousValue = 0;
+unsigned long previousUpdateTime = 0;
+unsigned long updateTime = 50;
 
-void setup() 
-{
-  pinMode(ledPin, OUTPUT);
-}
+void setup() {}
 
-void loop() 
+void loop()
 {
-  if(analogRead(sensorPin) != sensorValue)
-  {  
-    sensorValue = analogRead(sensorPin);
+  sensorValue = analogRead(sensorPin);
+
+  if (millis() - previousUpdateTime > updateTime && previousValue != sensorValue)
+  {
+    previousUpdateTime = millis();
+    previousValue = sensorValue;
     Serial.println(sensorValue);
-  }  
+  }
 }
