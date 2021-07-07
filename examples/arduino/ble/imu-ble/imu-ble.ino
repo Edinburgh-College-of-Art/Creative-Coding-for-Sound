@@ -19,9 +19,7 @@ float ax = 0, ay = 0, az = 0;
 float accArray[3] = {0};
 bool updateOutput = false;
 //----------------------------------------------------------------------------
-// LED Service UUID Device UUID
 BLEService imuService("B1C054FD-E6FC-469F-AA37-E464FF60957D");
-// Switch Characteristic UUID
 BLECharacteristic imuCharacteristic("B1C054FD-E6FC-469F-AA37-E464FF60957D", BLERead | BLENotify, 12);
 //------------------------------------------------------------------------------------------
 void setup()
