@@ -1,5 +1,5 @@
 //------------------------------------------------------------------------------
-// Twitter API MaxMSP Javascript Interface
+// MaxMSP XMLHttpRequest Javascript Interface
 //------------------------------------------------------------------------------
 // Setup outlets
 outlets = 3;
