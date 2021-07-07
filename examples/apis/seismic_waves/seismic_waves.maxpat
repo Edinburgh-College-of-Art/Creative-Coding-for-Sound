@@ -46,7 +46,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 225.333331999999984, 336.0, 70.0, 22.0 ]
+					"patching_rect" : [ 225.333331999999984, 350.0, 70.0, 22.0 ]
 				}
 
 			}
@@ -59,7 +59,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 126.0, 336.0, 72.833331999999928, 22.0 ]
+					"patching_rect" : [ 126.0, 350.0, 72.833331999999928, 22.0 ]
 				}
 
 			}
@@ -72,7 +72,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 21.5, 336.0, 76.0, 22.0 ]
+					"patching_rect" : [ 21.5, 350.0, 76.0, 22.0 ]
 				}
 
 			}
@@ -85,7 +85,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 158.0, 208.0, 63.0, 22.0 ]
+					"patching_rect" : [ 158.0, 222.0, 63.0, 22.0 ]
 				}
 
 			}
@@ -98,7 +98,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 83.0, 208.0, 63.0, 22.0 ]
+					"patching_rect" : [ 83.0, 222.0, 63.0, 22.0 ]
 				}
 
 			}
@@ -111,7 +111,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 8.0, 208.0, 63.0, 22.0 ]
+					"patching_rect" : [ 8.0, 222.0, 63.0, 22.0 ]
 				}
 
 			}
@@ -122,7 +122,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 225.333331999999984, 239.5, 293.0, 24.0 ],
+					"patching_rect" : [ 225.333331999999984, 253.5, 293.0, 24.0 ],
 					"presentation_linecount" : 2,
 					"text" : "Smooth the transition in data over the sample time"
 				}
@@ -139,7 +139,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 210.0, 373.0, 31.333331999999984, 103.0 ],
+					"patching_rect" : [ 210.0, 387.0, 31.333331999999984, 103.0 ],
 					"setminmax" : [ 9.300000190734863, 9.5 ]
 				}
 
@@ -155,7 +155,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 114.0, 373.0, 31.333331999999984, 103.0 ],
+					"patching_rect" : [ 114.0, 387.0, 31.333331999999984, 103.0 ],
 					"setminmax" : [ 0.340000003576279, 0.379999995231628 ]
 				}
 
@@ -171,7 +171,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 8.0, 371.0, 31.333331999999984, 103.0 ],
+					"patching_rect" : [ 8.0, 385.0, 31.333331999999984, 103.0 ],
 					"setminmax" : [ -0.159999996423721, -0.100000001490116 ]
 				}
 
@@ -185,7 +185,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 158.0, 239.5, 63.0, 23.0 ],
+					"patching_rect" : [ 158.0, 253.5, 63.0, 23.0 ],
 					"text" : "$1 45000"
 				}
 
@@ -199,7 +199,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 83.0, 239.5, 63.0, 23.0 ],
+					"patching_rect" : [ 83.0, 253.5, 63.0, 23.0 ],
 					"text" : "$1 45000"
 				}
 
@@ -211,7 +211,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
-					"patching_rect" : [ 210.0, 278.0, 41.0, 22.0 ],
+					"patching_rect" : [ 210.0, 292.0, 41.0, 22.0 ],
 					"text" : "line 0."
 				}
 
@@ -223,7 +223,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
-					"patching_rect" : [ 114.0, 278.0, 41.0, 22.0 ],
+					"patching_rect" : [ 114.0, 292.0, 41.0, 22.0 ],
 					"text" : "line 0."
 				}
 
@@ -237,7 +237,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 8.0, 239.5, 63.0, 23.0 ],
+					"patching_rect" : [ 8.0, 253.5, 63.0, 23.0 ],
 					"text" : "$1 45000"
 				}
 
@@ -249,7 +249,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
-					"patching_rect" : [ 8.0, 278.0, 41.0, 22.0 ],
+					"patching_rect" : [ 8.0, 292.0, 41.0, 22.0 ],
 					"text" : "line 0."
 				}
 
@@ -261,7 +261,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 179.0, 147.0, 282.0, 24.0 ],
+					"patching_rect" : [ 179.0, 161.0, 282.0, 24.0 ],
 					"presentation_linecount" : 2,
 					"text" : "3 separate XMLHttpRequests get the latest data"
 				}
@@ -274,7 +274,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
-					"patching_rect" : [ 8.0, 147.0, 169.0, 22.0 ],
+					"patching_rect" : [ 8.0, 161.0, 169.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"filename" : "seismic_waves.js",
 						"parameter_enable" : 0
@@ -291,7 +291,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 34.0, 70.0, 51.0, 24.0 ],
+					"patching_rect" : [ 34.0, 84.0, 51.0, 24.0 ],
 					"text" : "Start"
 				}
 
@@ -315,7 +315,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 84.833327999999995, 103.0, 205.666672000000005, 24.0 ],
+					"patching_rect" : [ 84.833327999999995, 117.0, 205.666672000000005, 24.0 ],
 					"text" : "Data updates ~45 seconds"
 				}
 
@@ -328,7 +328,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 8.0, 70.0, 24.0, 24.0 ]
+					"patching_rect" : [ 8.0, 84.0, 24.0, 24.0 ]
 				}
 
 			}
@@ -339,7 +339,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 8.0, 103.0, 76.0, 22.0 ],
+					"patching_rect" : [ 8.0, 117.0, 76.0, 22.0 ],
 					"text" : "metro 45000"
 				}
 
@@ -347,11 +347,12 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-30",
+					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 0.833331999999999, 43.0, 547.0, 20.0 ],
-					"text" : "This example grabs data from ThingSpeak that tracks seismorgaphic data from a station in New Dehli"
+					"patching_rect" : [ 0.833331999999999, 43.0, 547.0, 33.0 ],
+					"text" : "This example grabs data from ThingSpeak that tracks seismorgaphic data from a station in New Dehli\nhttps://thingspeak.com/channels/1434419"
 				}
 
 			}
