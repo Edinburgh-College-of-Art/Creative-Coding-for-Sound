@@ -64,7 +64,7 @@ void loop()
     accArray[0] = ax;
     accArray[1] = ay;
     accArray[2] = az;
-    imuCharacteristic.writeValue((void*)accArray, 12); // set the initial value for the characeristic:    
+    imuCharacteristic.writeValue((void*)accArray, 12);
   }
 }
 //----------------------------------------------------------------------------
